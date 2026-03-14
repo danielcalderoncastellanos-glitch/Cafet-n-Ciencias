@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/lc.jpg" type="image/x-icon">
+    <title>Cafetín Central - Punto de Venta</title>
+</head>
+<body>
+    <header class="h-caja">
+        <div class="cajarr2">
+            <div class="izq2">
+                <img src="img/lc.jpg" class="logo">
+                <h1>Cafetín Central ☕ - Punto de Venta</h1>
+            </div>
+            <a href="../Proyecto 2/index.html" class="ca-salir">Salir</a>
+        </div>
+    </header>
+    <main class="cajaw">
+        <div class="caja-prod">
+            <h2>Productos 🍽️</h2>
+
+            <div id="listpcaja" class="prod"></div>
+        </div>
+
+        <div class="cajat">
+            <h2>Ticket 🧾</h2>
+            <ul id="listv"></ul>
+            <p class="total">Total: 💲 <span id="totalv">0</span></p>
+            <button onclick="procesv()" class="rppal">Emitir Recibo 📠</button>
+            <pre id="recibo"></pre>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>prodcaja();</script>
+    <section class="foncj"></section>
+</body>
+</html>

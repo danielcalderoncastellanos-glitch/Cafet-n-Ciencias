@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/lc.jpg" type="image/x-icon">
+    <title>Cafetín Central - Cliente</title>
+</head>
+
+<body>
+    <header>
+        <div class="cajarr">
+            <div class="izq">
+                <img src="img/lc.jpg" class="logo">
+                <h1>Cafetín Central ☕ - Facultad de Ciencias</h1>
+            </div>
+            <nav>
+                <button class="nav-cl on" onclick="mossecc('catal')">Catálogo</button>
+                <button class="nav-cl" onclick="mossecc('carr')">Carrito (<span id="carrito-count">0</span>)</button>
+                <button class="nav-cl" onclick="mossecc('hist')">Historial</button>
+            </nav>
+            <span class="ptosl" id="ptos-lealtad">Puntos: 150 ⭐</span>
+            <a href="../Proyecto 2/index.html" class="cl-salir">Salir</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="catal" class="secc on">
+            <h2>Catálogo de productos 📝</h2>
+
+            <div id="lisproduc" class="prod"></div>
+        </section>
+
+        <section id="carr" class="secc">
+            <h2>Mi carrito 🛒</h2>
+
+            <div id="carrlis"></div>
+
+            <p class="total">Total: 💲<span id="total">0</span></p>
+
+            <button onclick="dopedido()" class="p-ppal">Confirmar Pedido</button>
+        </section>
+
+        <section id="hist" class="secc">
+            <h2>Historial 📄</h2>
+
+            <ul id="histlis"></ul>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>cargarproduc();</script>
+    <section class="fonc"></section>
+</body>
+</html>
