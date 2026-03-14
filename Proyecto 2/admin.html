@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/lc.jpg" type="image/x-icon">
+    <title>Cafetín Central - Administrador</title>
+</head>
+
+<body>
+    <header class="h-caja">
+        <div class="cajarr3">
+            <div class="izq3">
+                <img src="img/lc.jpg" class="logo">
+                <h1>Cafetín Central ☕ - Administración </h1>
+            </div>
+            <a href="../Proyecto 2/index.html" class="ad-salir">Salir</a>
+        </div>
+    </header>
+    
+    <main class="adminw">
+        <section class="adminprod">
+            <h2>Agregar producto 🥣</h2>
+            <form id="fadminprod">
+                <input type="text" id="Prodname" placeholder="Nombre del producto" required>
+                <input type="number" id="Prodprecio" placeholder="Precio ($. )" required>
+                <button type="submit">Agregar 🍴</button>
+            </form>
+        </section>
+
+        <section class="adminlist">
+            <h2>Menú Actual 🥄</h2>
+            <ul id="listadmin"></ul>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>prodadmin();</script>
+    <section class="fona"></section>
+</body>
+</html>
